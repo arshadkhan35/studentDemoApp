@@ -2,13 +2,13 @@
 				<div class="loginmodal-container">
 					<h1>Login to Your Account</h1><br>
 				  <form>
-					<input type="text" name="user" placeholder="Username">
-					<input type="password" name="pass" placeholder="Password">
-					<input type="submit" name="login" class="login loginmodal-submit" value="Login" (click)='loggin()'>
+					<input type="text" name="user" placeholder="Username"  #name>
+					<input type="password" name="pass" placeholder="Password" #pass>
+					<input type="submit" name="login" class="login loginmodal-submit" value="Login" (click)='loggin(name.value,pass.value)'>
 				  </form>
 					
 				  <div class="login-help">
 					<a href="#">Register</a> - <a href="#">Forgot Password</a>
 				  </div>
 				</div>
-		
+		{{loginData}}
